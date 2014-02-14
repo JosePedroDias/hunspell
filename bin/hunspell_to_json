@@ -1,0 +1,34 @@
+#! /usr/bin/env node
+
+'use strict';
+
+
+
+var convert_aff_dic = require('../lib/convert_aff_dic');
+var fs = require('fs');
+
+
+//var currentDir = process.cwd();
+
+var jsonPath = process.argv.pop();
+var dicPath  = process.argv.pop();
+var affPath  = process.argv.pop();
+
+convert_aff_dic(
+    affPath,
+    dicPath,
+    function(err, res) {
+        if (err) { return console.err(err); }
+        fs.writeFile(
+            jsonPath,
+            //JSON.stringify(res, null, '  '),
+            JSON.stringify(res),
+            function(err) {
+                if (err) {
+                    return console.err(err);
+                }
+                console.log('Saved %s file.', jsonPath); 
+            }
+        );
+    }
+);

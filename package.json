@@ -1,0 +1,36 @@
+{
+  "name": "hunspell",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/convert_aff_dic.js",
+  "preferGlobal": true,
+  "directories": {
+  },
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JosePedroDias/hunspell.git"
+  },
+  "keywords": [
+  ],
+  "author": {
+    "name" : "José Pedro Dias",
+    "email" : "jose.pedro.dias@gmail.com",
+    "url" : "http://josepedrodias.com/"
+  },
+  "engines": {
+    "node": ">= 0.10.x"
+  },
+  "dependencies": {
+    "esprima":     ">= 1.0.3"
+  },
+  "bin": {
+    "hunspell_to_json": "bin/hunspell_to_json"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/JosePedroDias/hunspell/issues"
+  }
+}
