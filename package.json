@@ -23,7 +23,7 @@
     "node": ">= 0.10.x"
   },
   "dependencies": {
-    "esprima":     ">= 1.0.3"
+    "byline":     ">= 4.1.1"
   },
   "bin": {
     "hunspell_to_json": "bin/hunspell_to_json"
